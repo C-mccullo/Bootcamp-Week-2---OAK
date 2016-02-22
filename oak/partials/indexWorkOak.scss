@@ -1,0 +1,99 @@
+// Index Work Section Oak
+
+section.work {
+	.workTitle {
+		margin: 35px 0;
+	}
+	.galleryNav {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		img {
+			float: left;
+			padding: 10px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			background-color: $turkeyGreen;
+			margin-right: 10px;
+		}
+		li {
+			display:block;
+			float: left;
+			padding:10px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.gallery-Item {
+	width: (33.3% - 1.5%);
+	float: left;
+	margin-right: 1.5%;
+	margin-bottom: 1.5%;
+	position: relative;
+	border: 2px inset transparent;
+	img {
+		width: 100%;
+	}
+	&:nth-child(3n), &:last-child {
+		margin-right: 0;
+	}
+	// *******LOOK INTO OTHER PROPERTIES BESIDES OPACITY TO ALTER
+	&:hover .gallery-hover {
+		display: block;
+		border: 2px inset black;
+		background-color: $turkeyGreen;
+		opacity: 0.7;
+		cursor: crosshair;
+	}
+	.gallery-hover {
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		bottom:0;
+		left: 0;
+		right: 0;
+		display: none;
+		.heart {
+			display: block;
+			height: 50%;
+			i.fa {
+				font-size: 18px;
+				font-size: 1.8rem;
+			}
+			p.likes {
+				margin: 0;
+			}
+		}
+		.gallery-Item-Description {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			h4 {
+				margin: 0;
+				font-weight: 600;
+				line-height: 20px;
+				line-height: 2rem;
+			}
+			p {
+				margin: 0;
+				font-weight: 400;
+				color: black;
+				text-transform: uppercase;
+				line-height: 20px;
+				line-height: 2rem;
+			}
+		}
+	}
+}
+
+.spinnyWheel{
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	img {
+		position: relative;
+		left: calc(50% - 18px);
+		display: block;
+		height: 30px;
+	}
+}

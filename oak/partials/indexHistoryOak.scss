@@ -1,0 +1,18 @@
+// Index History Section
+
+section.history {
+	.historyText {
+		width: 60%;
+		float: left;
+		padding-top: 35px;
+		padding-right: 70px;
+
+	}
+	.historyImage {
+		width: 40%;
+		float: left;
+		img {
+			width: 100%;
+		}
+	}
+}

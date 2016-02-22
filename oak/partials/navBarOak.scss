@@ -1,0 +1,63 @@
+// Navigation Bar
+	
+nav.navBar {
+	margin: 0 auto;
+	max-width: 1170px; 
+	width: 100%;
+	background-color: white;
+	padding-left: 70px;
+	padding-right: 70px;
+	.navLogo {
+		width: 50%;
+		float: left;
+		padding-top: calc(70px/2);
+		padding-bottom: calc(70px/2);	
+	}
+	.navLinks {
+		width: 50%;
+		float: left;
+		li {
+			margin-top: calc(70px/2);
+			margin-bottom: calc(70px/2);
+			float: left;
+			display: block;
+			color: black;
+			width: 16.6%;
+			text-align: right; 
+			list-style-type: none;
+			position: relative;
+			a {
+				padding-top: calc(70px/2);
+				padding-bottom: calc(70px/2);
+			}
+			ul.submenu {
+				position: absolute;
+				z-index: 99;
+				background-color: rgba(255,255,255,0.5);
+				padding: 2rem;
+				width: 15rem;
+				left: 2rem;
+				visibility: hidden;
+				li.submenuLinks {
+					text-align: left;
+					width: 100%;
+					float: none;
+					clear: both;
+					padding: 0;
+					margin: 0;
+					display: block;
+					a {
+						padding: 0;
+					}
+					&:hover {
+						color: $turkeyGreen;
+					}
+
+				}
+			}
+			&:hover ul.submenu {
+				visibility: visible;
+			}
+		}
+	}
+}

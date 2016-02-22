@@ -1,0 +1,41 @@
+// Footer 
+
+footer {
+	background-color: $grey;
+	padding-top: 70px;
+	.footerBox {
+		float: left;
+		width: 33.3%;
+	}
+	.footerAddress {
+		text-align: left;
+		letter-spacing: 2px;
+		letter-spacing: 0.2rem;	
+	}
+	.footerMedia {
+		text-align: center;
+		a {
+			font-size: 18px;
+			font-size: 1.8rem;
+			line-height: 3rem;
+			letter-spacing: 12px;
+			letter-spacing: 1.2rem;
+			&:hover {
+				color: $turkeyGreen;
+			}
+		}
+		p {
+			letter-spacing: 2px;
+			letter-spacing: 0.2rem;
+		}
+	}
+	.footerContact {
+		position: relative;
+		.move-to-right {
+			position: absolute;
+			right: 0;
+			letter-spacing: 2px;
+			letter-spacing: 0.2rem;
+		}
+	}
+}

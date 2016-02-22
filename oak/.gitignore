@@ -1,0 +1,5 @@
+**/*.psd
+/DESIGN LAYOUT
+**/*.zip
+node_modules
+*.pdf

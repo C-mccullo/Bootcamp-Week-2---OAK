@@ -1,0 +1,38 @@
+// Index Header
+
+.headerHero {
+	background-image: url(images/header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 610px;
+	padding: 70px;
+	position: relative;
+	margin-bottom: 70px;
+	.titleDiv {
+		position: absolute;
+		top: 290px;
+		left: 55px;
+		width: 530px;
+		text-transform: uppercase;
+		text-align: left;
+		h1 {
+			position: relative;
+			z-index: 1;
+			&::after {
+			content: "";
+			height: 60px;
+			width: 255px;
+			display: block;
+			background: $turkeyGreen;
+			position:absolute;
+			left: 167px;
+			top:-16px;
+			z-index: -1;
+		}
+		}
+		.contactTitleSpan {
+			font-weight: 300;
+		}
+	}	
+}

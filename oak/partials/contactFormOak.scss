@@ -1,0 +1,64 @@
+// Contact Form Oak
+
+section.contactForm {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.contactInfo {
+	float: left;
+	.contactDiv {
+		height: 33.3%;
+		img {
+			float: left;
+		}
+		.contactTextDiv {
+			float: left;
+			padding-left: 20px;
+			padding-top: 10px;
+			h4 {
+				margin: 0;
+			}
+		}
+	}
+}
+.email {
+	float: right;
+	width: 80%;
+	.emailSectionOne {
+		width: 50%;
+		float: left;
+		padding: 10px;
+		input {
+			width: 100%;
+		}
+	}
+	.emailSectionTwo {
+		width: 50%;
+		float: left;
+		padding: 10px;
+		input {
+			width: 100%;
+		}
+		textarea.message {
+			width: 100%;
+			height: 102px;
+			height: 10.2rem;
+			overflow: hidden;
+			border: 1px solid $grey;
+			text-transform: uppercase;
+			font-family: $Ubuntu-font;
+			background: white;
+			font-size: 12px;
+			font-size: 1.2rem;
+			line-height: 24px;
+			line-height: 2.4rem;
+			padding: 12px;
+			margin: 12px;
+			resize: none;
+			&:focus {
+				border: 1px solid black;
+				outline: none;
+			}
+		}
+	}
+}

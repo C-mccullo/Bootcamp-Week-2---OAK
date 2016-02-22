@@ -1,0 +1,72 @@
+// Index NewsLetter Oak
+
+// NEWSLETTER
+section.newsLetter  {
+	background: $turkeyGreen;
+	margin-bottom: 0;
+	.newsLetterText {
+		width: 50%;
+		float: left;
+		padding: 35px;
+		
+		div {
+			padding: 35px;
+			padding-top: calc(35px);
+			padding-bottom: calc(35px);
+		}
+		h2 {
+			line-height: 1.4rem;
+		}
+		h2 span {
+			font-weight: bold;
+		}
+	}
+	.newsLetterForm {
+		width: 50%;
+		float: left;
+		background-image: url(images/clock.jpg);
+		padding: 35px;
+		div {
+			padding: 35px;
+			background: white;
+			input {
+				width: 100%;
+			}
+			input.indexButton {
+				width: 80%;
+				margin-right: 10%;
+				margin-left: 10%;
+				margin-top: 12px;
+				margin-bottom: 12px;
+			}
+		}
+	}
+}
+input {
+	border: 1px solid $grey;
+	text-transform: uppercase;
+	font-family: $Ubuntu-font;
+	background: white;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 12px;
+	line-height: 1.2rem;
+	padding: 12px;
+	margin: 12px;
+	&:focus {
+		border: 1px solid black;
+		outline: none;
+	}
+}
+input.button {
+	border: 1px solid $turkeyGreen;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: white;
+	padding: 12px;
+	background: $turkeyGreen;
+	&:hover {
+		border: 1px solid black;
+	}
+}
